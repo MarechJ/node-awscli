@@ -1,7 +1,5 @@
-## rhinogram/node-awscli
-Public docker image with node, docker, and awscli dependencies for running aws and docker-related deployments/jobs in CircleCi workspaces. Write your AWS credentials to `~/.aws/credentials`
-to begin using the aws cli.
+## maresh/nodejs-aws-cli
+Public docker image with node 6.10, docker, and awscli dependencies for running aws and docker-related deployments/jobs.
+Write your AWS credentials to `~/.aws/credentials` to begin using the aws cli.
 
-Dockerhub repo: https://hub.docker.com/r/rhinogram/node-awscli/
-
-This image is designed for use with CircleCi 2.0 and is built off of the base circleci/node:6.11.2 image.
+Dockerhub repo: https://hub.docker.com/r/maresh/nodejs-aws-cli/
