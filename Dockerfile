@@ -1,12 +1,11 @@
-FROM circleci/node:6.11.2
-LABEL maintainer="Rhinogram, LLC"
-LABEL description="Basic Docker image with Node and AWS CLI for CircleCi workspaces"
+FROM node:6.10.0
+LABEL maintainer="maresh"
+LABEL description="Basic Docker image with Node and AWS CLI for CI"
 
-RUN sudo mkdir -p /dir
+RUN mkdir -p /dir
 ADD dependencies.sh test.js /dir/
 WORKDIR /dir
-RUN sudo apt-get install apt-utils
-RUN sudo chmod +x ./dependencies.sh
+RUN  chmod +x ./dependencies.sh
 RUN ./dependencies.sh
 
 CMD /bin/bash
